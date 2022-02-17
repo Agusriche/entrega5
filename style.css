@@ -1,0 +1,353 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* RESETEO */
+
+
+/* inicio de estilos para header */
+
+.header-container {
+    color: hsl(54, 100%, 51%);
+    background-color: hsl(0, 0%, 0%);
+    padding: 60px 50px;
+    font-size: large;
+    font-style: italic;
+    /* alinear horizontalmente */
+    /* justify-content: center; */
+    /* todo lo de arriba no aplicado debido a la falta de flex en esta entrega. */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.headertitle {
+    margin: 10px;
+    float: left;
+}
+
+.headertext {
+    float: right;
+    padding: 5px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* fin estilos header */
+
+
+/* inicio estilos body */
+
+body {
+    background-color: hsl(239, 100%, 11%);
+}
+
+.img-carro img {
+    aspect-ratio: 16/9;
+    height: 550px;
+}
+
+
+/* CARROUSEL INICIO */
+
+
+/* CARROUSEL FIN */
+
+
+/* inicio galeria "EL AYER Y EL HOY*/
+
+.containergaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "IMG-1 IMG-2" "IMG-4 IMG-5";
+    background-color: hsl(0, 100%, 100%);
+    font-size: medium;
+    font-style: inherit;
+}
+
+.IMG-4 {
+    grid-area: IMG-4;
+}
+
+.IMG-5 {
+    grid-area: IMG-5;
+}
+
+.IMG-1 {
+    grid-area: IMG-1;
+}
+
+.IMG-2 {
+    grid-area: IMG-2;
+}
+
+.galeriatittle {
+    font-size: large;
+    margin: 20px;
+    padding: 10px;
+    color: hsl(54, 100%, 51%);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.galeriatext {
+    font-size: medium;
+    margin: 10px;
+    padding: 10px;
+}
+
+.galeriaimg {
+    margin: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 300px;
+}
+
+
+/* FIN GALERIA */
+
+
+/* SECCION MATCHS ( GRID Y FLEBOX DESAFIO 3) */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.contenedor-matchs {
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .textos {
+    height: 100%;
+    /* Flebox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.match1 {
+    background-image: url(./img/matchs/ALEMANIA.jpg);
+}
+
+.match2 {
+    background-image: url(./img/carrousel/argentina.png);
+}
+
+.match3 {
+    background-image: url(./img/matchs/ESPAÑA.jpg);
+}
+
+.match4 {
+    background-image: url(./img/matchs/FRANCIA.jpg);
+}
+
+.match5 {
+    background-image: url(./img/matchs/ITALIA.jpg);
+}
+
+.match6 {
+    background-image: url(./img/matchs/INGLATERRA.png);
+}
+
+.banner {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    /* Flexbox */
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./img/matchs/Banner.jpg);
+}
+
+.banner ul {
+    list-style: none;
+}
+
+.banner ul li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.banner .boton {
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+/* ANIMACION */
+
+.boton {
+    transition: 2s;
+}
+
+.boton:hover {
+    transform: scale(1, 2);
+}
+
+
+/* ANIMACION */
+
+
+/* FIN MATCHS ( DESAFIO 3  )*/
+
+
+/* fin estilos body */
+
+
+/* inicio de estilos footer */
+
+.footer-container {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 32%);
+    padding: 20px 50px;
+    font-size: medium;
+    font-style: italic;
+}
+
+.footerlogos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    margin: 20px;
+}
+
+
+/* CSS ABOUT US */
+
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.boton-about-us {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton-about-us:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* FIN ABOUT US */
+
+
+/* fin estilos footer */
